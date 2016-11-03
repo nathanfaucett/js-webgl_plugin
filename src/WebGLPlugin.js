@@ -155,8 +155,6 @@ WebGLPluginPrototype.bindAttributes = function(buffers, vertexBuffer, glAttribut
         il = glArray.length - 1,
         glAttribute, buffer;
 
-    this.context.setArrayBuffer(vertexBuffer, force);
-
     while (i++ < il) {
         glAttribute = glArray[i];
         buffer = buffers[glAttribute.name];
