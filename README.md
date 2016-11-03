@@ -1,4 +1,4 @@
-canvas_plugin [![Build Status](https://travis-ci.org/nathanfaucett/js-canvas_plugin.svg?branch=master)](https://travis-ci.org/nathanfaucett/js-canvas_plugin)
+webgl [![Build Status](https://travis-ci.org/nathanfaucett/js-webgl_plugin.svg?branch=master)](https://travis-ci.org/nathanfaucett/js-webgl_plugin)
 ======
 
-canvas plugin
+webgl plugin
