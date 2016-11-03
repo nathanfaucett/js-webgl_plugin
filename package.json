@@ -1,0 +1,42 @@
+{
+  "name": "@nathanfaucett/webgl_plugin",
+  "version": "0.0.1",
+  "description": "webgl plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nathanfaucett/js-webgl_plugin.git"
+  },
+  "main": "src/index.js",
+  "keywords": [
+    "webgl_plugin",
+    "webgl_plugin.js",
+    "scene",
+    "plugin"
+  ],
+  "scripts": {
+    "test": "npm run test-node",
+    "test-node": "node ./test | ./node_modules/.bin/tap-spec",
+    "test-node-raw": "node ./test",
+    "test-browser-local": "zuul --local 9999 --ui tape -- ./test"
+  },
+  "author": "Nathan Faucett",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "@nathanfaucett/scene_graph": "git@github.com:nathanfaucett/js-scene_graph.git",
+    "@nathanfaucett/camera_component": "git@github.com:nathanfaucett/js-camera_component.git",
+    "@nathanfaucett/transform_components": "git@github.com:nathanfaucett/js-transform_components.git",
+    "@nathanfaucett/task": "^0.0.7",
+    "gulp-jsbeautifier": "^2.0.3",
+    "gulp-jshint": "^2.0.1",
+    "jshint": "^2.9.3",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.0",
+    "zuul": "^3.11.0"
+  },
+  "dependencies": {
+    "@nathanfaucett/fast_hash": "^0.0.3",
+    "@nathanfaucett/scene_renderer": "git@github.com:nathanfaucett/js-scene_renderer.git",
+    "@nathanfaucett/webgl_context": "git@github.com:nathanfaucett/js-webgl_context.git"
+  }
+}
