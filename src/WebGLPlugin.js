@@ -122,27 +122,28 @@ WebGLPluginPrototype.bindBoneUniforms = function(bones, glUniforms, force) {
         index = 0;
 
         while (i++ < il) {
-            bone = bones[i].components["bone.Bone"];
-            mat4.mul(mat, bone.uniform, bone.bindPose);
+            if ((bone = bones[i].getComponent("mesh.Bone"))) {
+                mat4.mul(mat, bone.uniform, bone.bindPose);
 
-            boneMatrixValue[index] = mat[0];
-            boneMatrixValue[index + 1] = mat[1];
-            boneMatrixValue[index + 2] = mat[2];
-            boneMatrixValue[index + 3] = mat[3];
-            boneMatrixValue[index + 4] = mat[4];
-            boneMatrixValue[index + 5] = mat[5];
-            boneMatrixValue[index + 6] = mat[6];
-            boneMatrixValue[index + 7] = mat[7];
-            boneMatrixValue[index + 8] = mat[8];
-            boneMatrixValue[index + 9] = mat[9];
-            boneMatrixValue[index + 10] = mat[10];
-            boneMatrixValue[index + 11] = mat[11];
-            boneMatrixValue[index + 12] = mat[12];
-            boneMatrixValue[index + 13] = mat[13];
-            boneMatrixValue[index + 14] = mat[14];
-            boneMatrixValue[index + 15] = mat[15];
+                boneMatrixValue[index] = mat[0];
+                boneMatrixValue[index + 1] = mat[1];
+                boneMatrixValue[index + 2] = mat[2];
+                boneMatrixValue[index + 3] = mat[3];
+                boneMatrixValue[index + 4] = mat[4];
+                boneMatrixValue[index + 5] = mat[5];
+                boneMatrixValue[index + 6] = mat[6];
+                boneMatrixValue[index + 7] = mat[7];
+                boneMatrixValue[index + 8] = mat[8];
+                boneMatrixValue[index + 9] = mat[9];
+                boneMatrixValue[index + 10] = mat[10];
+                boneMatrixValue[index + 11] = mat[11];
+                boneMatrixValue[index + 12] = mat[12];
+                boneMatrixValue[index + 13] = mat[13];
+                boneMatrixValue[index + 14] = mat[14];
+                boneMatrixValue[index + 15] = mat[15];
 
-            index += 16;
+                index += 16;
+            }
         }
 
         boneMatrix.set(boneMatrixValue, force);
