@@ -23,9 +23,9 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "@nathanfaucett/scene_graph": "git@github.com:nathanfaucett/js-scene_graph.git",
-    "@nathanfaucett/camera_component": "git@github.com:nathanfaucett/js-camera_component.git",
-    "@nathanfaucett/transform_components": "git@github.com:nathanfaucett/js-transform_components.git",
+    "@nathanfaucett/scene_graph": "git://github.com/nathanfaucett/js-scene_graph.git",
+    "@nathanfaucett/camera_component": "git://github.com/nathanfaucett/js-camera_component.git",
+    "@nathanfaucett/transform_components": "git://github.com/nathanfaucett/js-transform_components.git",
     "@nathanfaucett/task": "^0.0.7",
     "gulp-jsbeautifier": "^2.0.3",
     "gulp-jshint": "^2.0.1",
@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@nathanfaucett/fast_hash": "^0.0.3",
-    "@nathanfaucett/scene_renderer": "git@github.com:nathanfaucett/js-scene_renderer.git",
-    "@nathanfaucett/webgl_context": "git@github.com:nathanfaucett/js-webgl_context.git"
+    "@nathanfaucett/scene_renderer": "git://github.com/nathanfaucett/js-scene_renderer.git",
+    "@nathanfaucett/webgl_context": "git://github.com/nathanfaucett/js-webgl_context.git"
   }
 }
